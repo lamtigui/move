@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoveTo | CONTACT </title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <style>
+        .propos {
+            background: url('images/moving.jpg') no-repeat center center/cover;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            padding-left: 60px;
+            color: rgb(255, 255, 255);
+        }
+
+        .propos-1 {
+            background-color: rgba(11, 52, 85, 0.644);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        .propos-2 {
+            z-index: 2;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-white border-bottom">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/Moveto.png" alt="Moveto Logo" style="height: 40px;">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">A Propos De Nous</a>
+                        </li>
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button"
+                                data-bs-toggle="dropdown">
+                                Nos Services
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+                                <li><a class="dropdown-item" href="conception.html">PLANIFICATION ET CONCEPTION</a></li>
+                                <li><a class="dropdown-item" href="MAISON.html">DEMENAGEMENT MAISON</a></li>
+                                <li><a class="dropdown-item" href="BUREAU.html">DEMENAGEMENT BUREAU</a></li>
+                                <li><a class="dropdown-item" href="CENTRE.html">DEMENAGEMENT CENTRE COMMERCIAL</a></li>
+                                <li><a class="dropdown-item" href="DISTANCE.html">DEMENAGEMENT ET INSTALATION</a></li>
+                                <li><a class="dropdown-item" href="PARTICULIER.html">DEMENAGEMENT PARTICULIER</a></li>
+                                <li><a class="dropdown-item" href="ASSISTANCE.html">CONSEIL ET ASSISTANCE</a></li>
+                                <li><a class="dropdown-item" href="PROFESSIONNELS.html">DEMENAGEMENT PROFESSIONNELS</a>
+                                </li>
+                                <li><a class="dropdown-item" href="INSTALATION.html">DEMENAGEMENT LONGUE DISTANCE</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Nous</a>
+                        </li>
+
+
+                    </ul>
+
+                    <div class="social-icons d-flex align-items-center">
+                        <a href="#" class="me-2"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="me-2"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="me-2"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="me-2"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                    <a href="#" class="btn btn-orange ms-3">GET A QUOTE</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div role="main" class="main">
+        <section>
+            <div class="propos">
+                <div class="propos-1"></div>
+                <div class="propos-2">
+                    <a href="index.html">Home</a>
+                    <a href="#">/ Contactez-Nous</a>
+                    <h1 class="display-8 fw-bold">Contactez-Nous</h1>
+                </div>
+            </div>
+        </section>
+
+        <div class="container container-xl-custom pt-5">
+            <div class="row">
+                <div class="col">
+                    <p class="mb-1">CONTACTEZ-NOUS</p>
+                    <h3 class="text-secondary font-weight-bold text-capitalize text-7 mb-3">Envoie-nous un message
+                    </h3>
+                </div>
+            </div>
+            <div class="row pb-4">
+                <div class="col-lg-7 pb-5">
+
+                    <p>
+                        Nous sommes là pour vous aider à planifier votre déménagement en toute tranquillité. Pour
+                        obtenir plus d'informations sur nos services de déménagement, demander un devis personnalisé
+                        ou poser des questions, veuillez nous contacter dès aujourd'hui.
+                    </p>
+
+                    <form id="devisForm" method="POST">
+                        <div id="contactFormHolder">
+                            <div class="inputAndLabelCon">
+                                <label for="">Nom/Prenom <span class="necessary">*</span></label><br>
+                                <input type="text" name="senderName" placeholder="Nom" style=" border: 1px solid rgb(10, 10, 10) !important;
+                   font-family: arial;
+                   font-Weight: bold;
+                   font-size: 18px;
+                   color: #6c757d;  width: 100%;
+                   height: 40px; " required="">
+                            </div>
+                            <div class="inputAndLabelCon">
+                                <label for="">Ville <span class="necessary">*</span></label><br>
+                                <select name="senderVille" id="vll" style=" border: 1px solid rgb(10, 10, 10) !important;
+                   font-family: arial;
+                   font-Weight: bold;
+                   font-size: 18px;
+                   color: #6c757d;  width: 100%;
+                   height: 40px; " required="">
+                                    <option value="" disabled="" selected="" hidden="">Choisi la Ville</option>
+                                    <option value="10">
+                                        Agadir </option>
+                                    <option value="17">
+                                        Beni Mellal </option>
+                                    <option value="22">
+                                        Berkane </option>
+                                    <option value="1">
+                                        Casablanca </option>
+                                    <option value="16">
+                                        El Jadida </option>
+                                    <option value="2">
+                                        Fes </option>
+                                    <option value="9">
+                                        Kenitra </option>
+                                    <option value="20">
+                                        Khemisset </option>
+                                    <option value="15">
+                                        Khouribga </option>
+                                    <option value="21">
+                                        laayoune </option>
+                                    <option value="4">
+                                        Marrakech </option>
+                                    <option value="6">
+                                        Meknes </option>
+                                    <option value="14">
+                                        Mohammedia </option>
+                                    <option value="18">
+                                        Nador </option>
+                                    <option value="7">
+                                        Oujda </option>
+                                    <option value="8">
+                                        Rabat </option>
+                                    <option value="13">
+                                        Safi </option>
+                                    <option value="5">
+                                        Sale </option>
+                                    <option value="3">
+                                        Tanger </option>
+                                    <option value="19">
+                                        Taza </option>
+                                    <option value="12">
+                                        Temara </option>
+                                    <option value="11">
+                                        Tetouan </option>
+                                </select>
+                            </div>
+                            <div class="inputAndLabelCon">
+                                <label for="">Tél <span class="necessary">*</span></label><br>
+                                <input style=" border: 1px solid rgb(10, 10, 10) !important;
+                   font-family: arial;
+                   font-Weight: bold;
+                   font-size: 18px;
+                   color: #6c757d;  width: 100%;
+                   height: 40px; " type="tel" name="senderTel" placeholder="Tél" maxlength="10"
+                                    onkeypress="return onlyNumberKey(event)" required="">
+                            </div>
+                            <div class="inputAndLabelCon">
+                                <label for="">Email <span class="necessary">*</span></label><br>
+                                <input style=" border: 1px solid rgb(10, 10, 10) !important;
+                   font-family: arial;
+                   font-Weight: bold;
+                   font-size: 18px;
+                   color: #6c757d;  width: 100%;
+                   height: 40px; " type="text" name="senderEmail" placeholder="Email" required="">
+                            </div>
+
+                            <div class="inputAndLabelCon" id="rt">
+                                <label>Type de local<span class="necessary">*</span></label><br>
+                                <select name="ProOrPar" id="TypeLocal" style=" border: 1px solid rgb(10, 10, 10) !important;
+                   font-family: arial;
+                   font-Weight: bold;
+                   font-size: 18px;
+                   color: #6c757d;  width: 100%;
+                   height: 40px; " required="">
+                                    <option value="" disabled="" selected="" hidden="">Choisi le type de local
+                                    </option>
+                                    <option value="1">
+                                        Particulier </option>
+                                    <option value="2">
+                                        Professionnel </option>
+                                </select>
+                            </div>
+
+                            <div class="inputAndLabelCon" id="Part">
+                                <label for="">Sujet <span class="necessary">*</span></label><br>
+                                <select name="messageSubject1" style=" border: 1px solid rgb(10, 10, 10) !important;
+                   font-family: arial;
+                   font-Weight: bold;
+                   font-size: 18px;
+                   color: #6c757d;  width: 100%;
+                   height: 40px; " id="pr">
+                                    <option value="" disabled="" selected="" hidden="">Choisi le Sujet</option>
+                                    <option value="1">
+                                        Studio </option>
+                                    <option value="2">
+                                        Appartement </option>
+                                    <option value="3">
+                                        Maison </option>
+                                    <option value="4">
+                                        Villa </option>
+                                    <option value="5">
+                                        Autre </option>
+                                </select>
+                            </div>
+
+                            <div class="inputAndLabelCon" id="Prof">
+                                <label for="">Sujet <span class="necessary">*</span></label><br>
+                                <select name="messageSubject2" style=" border: 1px solid rgb(10, 10, 10) !important;
+                   font-family: arial;
+                   font-Weight: bold;
+                   font-size: 18px;
+                   color: #6c757d;  width: 100%;
+                   height: 40px; " id="pf">
+                                    <option value="" disabled="" selected="" hidden="">Choisi le Sujet</option>
+                                    <option value="6">
+                                        Magasin </option>
+                                    <option value="7">
+                                        Showroom </option>
+                                    <option value="8">
+                                        Supermarche </option>
+                                    <option value="9">
+                                        usine </option>
+                                    <option value="10">
+                                        Autre </option>
+                                </select>
+                            </div>
+
+                            <div class="inputAndLabelCon" id="atre">
+                                <label for="">Autre <span class="necessary">*</span></label><br>
+                                <input style=" border: 1px solid rgb(10, 10, 10) !important;
+                   font-family: arial;
+                   font-Weight: bold;
+                   font-size: 18px;
+                   color: #6c757d;  width: 100%;
+                   height: 40px; " type="text" name="messageSubject3" id="atr" placeholder="Autre">
+                            </div>
+
+
+                            <script>
+                                $(document).ready(function () { $("#Part").hide(); $("#Prof").hide(); $("#atre").hide(); });
+                            </script>
+
+                            <script>
+                                let sltplc = document.querySelector('#TypeLocal');
+                                sltplc.addEventListener('change', function () {
+
+                                    if (this.value == '2') {
+                                        $("#Prof").show();
+                                        $("#atre").hide();
+                                        $('#atr').val('');
+                                        $("#Part").hide();
+                                        $("#pr")[0].selectedIndex = 0;
+
+                                        let slpf = document.querySelector("#pf");
+                                        slpf.addEventListener('change', function () {
+                                            if (this.value == 10) {
+                                                $("#atre").show();
+                                            }
+                                            else {
+                                                $("#atre").hide();
+                                                $('#atr').val('');
+                                            }
+                                        });
+                                    }
+                                    else
+                                        if (this.value == '1') {
+                                            $("#Part").show();
+                                            $("#atre").hide();
+                                            $('#atr').val('');
+                                            $("#Prof").hide();
+                                            $("#pf")[0].selectedIndex = 0;
+
+                                            let slpr = document.querySelector("#pr");
+                                            slpr.addEventListener('change', function () {
+                                                if (this.value == 5) {
+                                                    $("#atre").show();
+                                                }
+                                                else {
+                                                    $("#atre").hide();
+                                                    $('#atr').val('');
+                                                }
+                                            });
+                                        }
+                                });
+                            </script>
+
+                            <div class="inputAndLabelCon" id="messageTxt">
+                                <label for="">Message <span class="necessary">*</span></label><br>
+                                <textarea style=" border: 1px solid rgb(10, 10, 10) !important;
+                   font-family: arial;
+                   font-Weight: bold;
+                   font-size: 18px;
+                   color: #6c757d;  width: 100%;
+                   height: 100px; " type="text" name="senderMessage" placeholder="Message"
+                                    required=""></textarea><br><br>
+
+                            </div>
+
+                            <div class="inputAndLabelCon">
+                                <label id="captchaQuestion">Quel est la somme de 4 + 1 ?</label><br>
+                                <input type="number" placeholder="Entrez bonne reponse " style=" border: 1px solid rgb(10, 10, 10) !important;
+font-family: arial;
+font-Weight: bold;
+font-size: 18px;
+color: #6c757d;  width: 100%;
+height: 40px; " id="captchaAnswer" required=""><br><br>
+                                <span id="errorMessage" class="error"></span>
+                            </div>
+                            <button type="submit" id="sendMessageBtn"
+                                style="color:#fff; width: 100% ; background-color:#000; font-weight:bold"
+                                name="sendEmailSubBtn">ENVOYER</button>
+
+
+
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row text-center text-md-start">
+                    <div class="col-12 col-md-3 mb-4">
+                        <a class="navbar-brand" href="#">
+                            <img src="images/Moveto.png" alt="Moveto Logo" class="img-fluid">
+                        </a>
+                        <p>Hendrerit neque sem volutpat ornare bibendum class euismod. Ultricies sociosqu elit rhoncus
+                            imperdiet.
+                        </p>
+                        <div class="social-icons">
+                            <a href="#" class="me-2"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="me-2"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="me-2"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="me-2"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-3 mb-4">
+                        <h5 class="fw-bold">Our Services</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-dark">International Moves</a></li>
+                            <li><a href="#" class="text-dark">Domestic Moves</a></li>
+                            <li><a href="#" class="text-dark">Office Moves</a></li>
+                            <li><a href="#" class="text-dark">Secure Storage</a></li>
+                            <li><a href="#" class="text-dark">Vehicle Transfer</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-3 mb-4">
+                        <h5 class="fw-bold">Our Network</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-dark">Asia</a></li>
+                            <li><a href="#" class="text-dark">Africa</a></li>
+                            <li><a href="#" class="text-dark">Europe</a></li>
+                            <li><a href="#" class="text-dark">France</a></li>
+                            <li><a href="#" class="text-dark">Middle East</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 col-md-3 mb-4">
+                        <h5 class="fw-bold">Subscribe Newsletter</h5>
+                        <p>Subscribe to our Newsletter to get important news, amazing offers & inside scoops:</p>
+                        <form>
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="Enter your email">
+                                <button class="btn subscribe-btn" type="submit">SIGN UP</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="footer-bottom">
+            <p class="mb-0">Copyright &copy; 2025 <span class="fw-bold">Moveto</span>, All Rights Reserved. Powered By
+                <a href="#">Moxcreative</a>
+            </p>
+        </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+</html>
