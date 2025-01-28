@@ -242,15 +242,29 @@
   border-radius: 8px;
 }
 
+
+
 .hero2 {
   background: url('images/Log.png') fixed center center/cover;
-  height: 75vh;
+  height: 45vh;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   position: relative;
   padding-left: 80px;
   color: rgb(255, 255, 255);
+}
+@media (max-width: 768px) {
+  .hero2 {
+    background: url('images/Log.png') fixed center center/cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    padding-left: 80px;
+    color: rgb(255, 255, 255);
+  }
 }
 
 .hero-overlay2 {
@@ -286,12 +300,13 @@
 
 .world-map {
   text-align: center;
-  margin: 50px 0;
-  position: relative;
+  margin: 50px ;
+  
 }
 
 .world-map img {
-  max-width: 100%;
+  max-width: 5%;
+  height: 2%;
 }
 
 .location {
@@ -303,27 +318,27 @@
 
 .location-us {
   top: 20%;
-  left: 25%;
+  left: 10%;
 }
 
 .location-france {
-  top: 25%;
-  left: 70%;
+  top: 23%;
+  left: 45%;
 }
 
 .location-africa {
   top: 45%;
-  left: 65%;
+  left: 45%;
 }
 
 .location-malaysia {
   top: 55%;
-  left: 115%;
+  left:70%
 }
 
 .location-indonesia {
   top: 65%;
-  left: 117%;
+  left: 75%
 }
 
 .info-box {
@@ -362,9 +377,9 @@
 }
 
 .world-map img {
-  max-width: 150%;
+  max-width: 100%;
   height: auto;
-  max-height: 600px;
+  max-height: 100%;
 }
 
 .btn-get {
