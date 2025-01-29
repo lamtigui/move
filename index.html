@@ -57,16 +57,16 @@
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact Nous</a>
             </li>
-           
+
 
 
           </ul>
 
           <div class="social-icons d-flex align-items-center">
-            <a href="#" class="me-2"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="me-2"><i class="bi bi-twitter"></i></a>
-            <a href="#" class="me-2"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="me-2"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://www.facebook.com/" class="me-2"><i class="bi bi-facebook"></i></a>
+            <a href="https://x.com/" class="me-2"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.instagram.com/" class="me-2"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.whatsapp.com/" class="me-2"><i class="bi bi-whatsapp"></i></a>
           </div>
           <a href="#" class="btn btn-orange ms-3">GET A QUOTE</a>
         </div>
@@ -287,7 +287,7 @@
             <h1>Cover A Large Area To All Corners Of The Country</h1>
             <h2>Mattis cubilia mi magnis suscipit turpis tellus ipsum aenean nullam pharetra.</h2>
           </div>
-  
+
           <div class="container col-md-8">
             <div class="world-map position-relative">
               <img src="images/MAP.png" alt="World Map">
@@ -301,7 +301,7 @@
         </div>
       </div>
     </section>
-  
+
     <div class="stats col-md-12">
       <div class="header-section col-md-4 ">
         <h2>Our Companies By Number</h2>
@@ -366,6 +366,23 @@
         </div>
       </div>
     </section>
+    <button id="topBtn" onclick="scrollToTop()">UP</button>
+
+    <script>
+      const topBtn = document.getElementById("topBtn");
+
+      window.onscroll = function () {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+          topBtn.style.display = "block";
+        } else {
+          topBtn.style.display = "none";
+        }
+      };
+
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    </script>
     <footer class="footer">
       <div class="container">
         <div class="row text-center text-md-start">
