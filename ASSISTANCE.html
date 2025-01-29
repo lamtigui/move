@@ -2,27 +2,26 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MoveTo | CONSEIL ET ASSISTANCE</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="index.css">
-  <link rel="icon" href="images/logo.png" type="image/x-icon">
-  <style>
-          .propos {
-            background: url('images/moving.jpg') no-repeat center center/cover;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoveTo | CONSEIL ET ASSISTANCE</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <style>
+        .propos {
+            background: url('images/bg.png') no-repeat center center/cover;
             height: 50vh;
             display: flex;
             align-items: center;
-
             position: relative;
-            padding-left: 80px;
+            padding-left: 60px;
             color: rgb(255, 255, 255);
         }
 
         .propos-1 {
-            background-color: rgba(11, 52, 85, 0.644);
+            background-color: rgba(17, 83, 138, 0.644);
             position: absolute;
             top: 0;
             left: 0;
@@ -35,222 +34,272 @@
             z-index: 2;
             text-align: left;
         }
-  </style>
+
+        .container P {
+            text-align: justify;
+        }
+
+        .container1 img {
+            width: 60rem;
+            height: 27rem;
+        }
+
+        @media (max-width: 768px) {
+            .container1 img {
+                width: 45rem;
+                height: 20rem;
+            }
+        }
+
+        .test {
+
+            text-align: justify;
+            margin: 0;
+
+        }
+
+        @media (max-width: 768px) {
+            .test {
+                text-align: justify;
+                margin: 0;
+                padding-left: 2.5rem;
+                padding-right: 3rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-  <header>
-    <nav class="navbar navbar-expand-lg bg-white border-bottom">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img src="images/Moveto.png" alt="Moveto Logo" style="height: 40px;">
-        </a>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-white border-bottom">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/Moveto.png" alt="Moveto Logo" style="height: 40px;">
+                </a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="index.html">Accueil</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">A Propos De Nous</a>
-            </li>
-           
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="index.html" id="pagesDropdown" role="button"
-                data-bs-toggle="dropdown">
-                Nos Services
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
-                <li><a class="dropdown-item" href="conception.html">PLANIFICATION ET CONCEPTION</a></li>
-                <li><a class="dropdown-item" href="MAISON.html">DEMENAGEMENT MAISON</a></li>
-                <li><a class="dropdown-item" href="BUREAU.html">DEMENAGEMENT BUREAU</a></li>
-                <li><a class="dropdown-item" href="CENTRE.html">DEMENAGEMENT CENTRE COMMERCIAL</a></li>
-                <li><a class="dropdown-item" href="DISTANCE.html">DEMENAGEMENT ET INSTALATION</a></li>
-                <li><a class="dropdown-item" href="PARTICULIER.html">DEMENAGEMENT PARTICULIER</a></li>
-                <li><a class="dropdown-item" href="ASSISTANCE.html">CONSEIL ET ASSISTANCE</a></li>
-                <li><a class="dropdown-item" href="PROFESSIONNELS.html">DEMENAGEMENT PROFESSIONNELS</a>
-                </li>
-                <li><a class="dropdown-item" href="INSTALATION.html">DEMENAGEMENT LONGUE DISTANCE</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact Nous</a>
-            </li>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">A Propos De Nous</a>
+                        </li>
 
-          </ul>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="index.html" id="pagesDropdown" role="button"
+                                data-bs-toggle="dropdown">
+                                Nos Services
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+                                <li><a class="dropdown-item" href="conception.html">PLANIFICATION ET CONCEPTION</a></li>
+                                <li><a class="dropdown-item" href="MAISON.html">DEMENAGEMENT MAISON</a></li>
+                                <li><a class="dropdown-item" href="BUREAU.html">DEMENAGEMENT BUREAU</a></li>
+                                <li><a class="dropdown-item" href="CENTRE.html">DEMENAGEMENT CENTRE COMMERCIAL</a></li>
+                                <li><a class="dropdown-item" href="DISTANCE.html">DEMENAGEMENT ET INSTALATION</a></li>
+                                <li><a class="dropdown-item" href="PARTICULIER.html">DEMENAGEMENT PARTICULIER</a></li>
+                                <li><a class="dropdown-item" href="ASSISTANCE.html">CONSEIL ET ASSISTANCE</a></li>
+                                <li><a class="dropdown-item" href="PROFESSIONNELS.html">DEMENAGEMENT PROFESSIONNELS</a>
+                                </li>
+                                <li><a class="dropdown-item" href="INSTALATION.html">DEMENAGEMENT LONGUE DISTANCE</a>
+                                </li>
+                            </ul>
+                        </li>
 
-          <div class="social-icons d-flex align-items-center">
-            <a href="#" class="me-2"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="me-2"><i class="bi bi-twitter"></i></a>
-            <a href="#" class="me-2"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="me-2"><i class="bi bi-whatsapp"></i></a>
-          </div>
-          <a href="#" class="btn btn-orange ms-3">GET A QUOTE</a>
-        </div>
-      </div>
-    </nav>
-  </header>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Nous</a>
+                        </li>
+                    </ul>
 
-  <section>
-    <div class="propos">
-      <div class="propos-1"></div>
-      <div class="propos-2">
-        <a href="index.html">Home</a>
-        <a href="#">/ Conseil et assistace</a>
-        <h1 class="display-8 fw-bold">A propos de nous</h1>
-      </div>
-    </div>
-  </section>
-  <section>
-    <div class="container mt-5">
-      <div class="row align-items-center">
-        <div class="col-md-6 text-center">
-          <img src="images/conseils.png" style="border-radius: 10px;" alt="Moving Company"
-            class="img-fluid rounded mb-6">
-
-        </div>
-        <div class="col-md-6">
-
-
-          <p>
-            <h1>Conseil et assistance de demenagement Casablanca</h1>
-            Vous recherchez une societe de déménagement mais vous n'êtes pas certain de ce qu'elle peut vous offrir ?
-            Cet article détaille pour vous tous les services déménagement et les prestations possibles, afin de
-            faciliter votre emménagement dans votre nouveau logement. Nous vous proposons ici les prix moyens des
-            services offerts par les déménageurs avec une description de chacun de ces services.
-
-            Notre societe de déménagement se charge pour vous du transport et de la livraison de l'ensemble de vos
-            biens, mais elle vous offre également de nombreux autres services pratiques pour faciliter l'organisation de
-            votre déménagement. Toutes les sociétés de déménagement n'offrent néanmoins pas le même niveau de prestation
-            de service déménagement. Plutôt que de vous occuper de rechercher des emballages et cartons déménagement, de
-            contacter la municipalité, louer un monte-charge ou rechercher un garde meuble temporaire, sachez que de
-            nombreux déménageurs vous proposent ces services bien souvent déjà inclus dans l'offre et le devis
-            déménagement. Le tableau ci-dessous indique les prix moyens pour des services déménagement standards.
-
-
-            <h1>demenagement Casablanca</h1>
-            Selon la formule déménagement choisie, les déménageurs s'occupent simplement du transport et la livraison de
-            vos biens, ou peuvent gérer tous les aspects de votre déménagement. Cette prestation pour les déménagements
-            de particuliers permet beaucoup de flexibilité, quant à l'optimisation de transport par exemple
-            (déménagement groupé ou en camion aller simple) et les options ou le niveau de service déménagement
-            particulier que vous souhaitez, tout en garantissant une prestation et une exécution professionnelles.
-
-            Grâce à leur expertise du déménagement, le transport et le chargement de vos biens sont pris en charge
-            rapidement et de façon complètement sécurisée. Vous bénéficiez par ailleurs de l'assurance déménageur qui
-            couvre vos biens personnels.
-
-            Les professionnels du déménagement sont également en mesure de gérer votre projet de déménagement.
-            Intervenant sur plusieurs aspects tels que des programmes d'assistance pour le transfert du personnel.
-          </p>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container text-center py-5">
-      <div class="row align-items-center">
-
-        <div class="col-md-4 text-center">
-          <div class="icon-circle">
-            <i class="fas fa-building"></i>
-          </div>
-          <h5 class="mt-3">Demenagement Casablanca</h5>
-          <p>Lorem ipsum dolor sit amet, adipis elit consectetur.</p>
-        </div>
-
-
-        <div class="col-md-4 text-center">
-          <div class="icon-circle">
-            <i class="fas fa-home"></i>
-          </div>
-          <h5 class="mt-3">Demenagement Maison</h5>
-          <p>Lorem ipsum dolor sit amet, adipis elit consectetur.</p>
-        </div>
-
-
-
-
-
-        <div class="col-md-4 text-center">
-          <div class="icon-circle">
-            <i class="fas fa-clipboard"></i>
-          </div>
-          <h5 class="mt-3">Gestion de projet</h5>
-          <p>Lorem ipsum dolor sit amet, adipis elit consectetur.</p>
-        </div>
-      </div>
-  </section>
-
-
-  <footer class="footer">
-    <div class="container">
-      <div class="row text-center text-md-start">
-        <div class="col-12 col-md-3 mb-4">
-          <a class="navbar-brand" href="#">
-            <img src="images/Moveto.png" alt="Moveto Logo" class="img-fluid">
-          </a>
-          <p>Hendrerit neque sem volutpat ornare bibendum class euismod. Ultricies sociosqu elit rhoncus
-            imperdiet.
-          </p>
-          <div class="social-icons">
-            <a href="#" class="me-2"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="me-2"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="me-2"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="me-2"><i class="fab fa-youtube"></i></a>
-            <a href="#"><i class="fab fa-whatsapp"></i></a>
-          </div>
-        </div>
-
-        <div class="col-6 col-md-3 mb-4">
-          <h5 class="fw-bold">Our Services</h5>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-dark">International Moves</a></li>
-            <li><a href="#" class="text-dark">Domestic Moves</a></li>
-            <li><a href="#" class="text-dark">Office Moves</a></li>
-            <li><a href="#" class="text-dark">Secure Storage</a></li>
-            <li><a href="#" class="text-dark">Vehicle Transfer</a></li>
-          </ul>
-        </div>
-
-        <div class="col-6 col-md-3 mb-4">
-          <h5 class="fw-bold">Our Network</h5>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-dark">Asia</a></li>
-            <li><a href="#" class="text-dark">Africa</a></li>
-            <li><a href="#" class="text-dark">Europe</a></li>
-            <li><a href="#" class="text-dark">France</a></li>
-            <li><a href="#" class="text-dark">Middle East</a></li>
-          </ul>
-        </div>
-
-        <div class="col-12 col-md-3 mb-4">
-          <h5 class="fw-bold">Subscribe Newsletter</h5>
-          <p>Subscribe to our Newsletter to get important news, amazing offers & inside scoops:</p>
-          <form>
-            <div class="input-group">
-              <input type="email" class="form-control" placeholder="Enter your email">
-              <button class="btn subscribe-btn" type="submit">SIGN UP</button>
+                    <div class="social-icons d-flex align-items-center">
+                        <a href="#" class="me-2"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="me-2"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="me-2"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="me-2"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                    <a href="#" class="btn btn-orange ms-3">GET A QUOTE</a>
+                </div>
             </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <div class="footer-bottom">
-    <p class="mb-0">Copyright &copy; 2025 <span class="fw-bold">Moveto</span>, All Rights Reserved. Powered By <a
-        href="#">Moxcreative</a></p>
-  </div>
+        </nav>
+    </header>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <section>
+        <div class="propos">
+            <div class="propos-1"></div>
+            <div class="container propos-2">
+                <a href="index.html">Home</a>
+                <a href="#">/ A propos de nous</a>
+                <h1 class="display-8 fw-bold">A propos de nous</h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="container1">
+            <div class="row align-items-center">
+                <center>
+                    <h1>Conseil et assistance de demenagement Casablanca</h1>
+                </center>
+                <p class="test"> Vous recherchez une societe de déménagement mais vous n'êtes pas certain de ce qu'elle
+                    peut vous offrir ?
+                    Cet article détaille pour vous tous les services déménagement et les prestations possibles, afin de
+                    faciliter votre emménagement dans votre nouveau logement. Nous vous proposons ici les prix moyens
+                    des
+                    services offerts par les déménageurs avec une description de chacun de ces services.
+
+                    Notre societe de déménagement se charge pour vous du transport et de la livraison de l'ensemble de
+                    vos
+                    biens, mais elle vous offre également de nombreux autres services pratiques pour faciliter
+                    l'organisation de
+                    votre déménagement. Toutes les sociétés de déménagement n'offrent néanmoins pas le même niveau de
+                    prestation
+                    de service déménagement. Plutôt que de vous occuper de rechercher des emballages et cartons
+                    déménagement, de
+                    contacter la municipalité, louer un monte-charge ou rechercher un garde meuble temporaire, sachez
+                    que de
+                    nombreux déménageurs vous proposent ces services bien souvent déjà inclus dans l'offre et le devis
+                    déménagement. Le tableau ci-dessous indique les prix moyens pour des services déménagement
+                    standards.
+                </p>
+
+                <div class="col-md-6 text-end">
+                    <img src="images/conseils.png" alt="Moving Company" style="padding: 2rem;"
+                        class="img-fluid rounded mb-6">
+                </div>
+                <div class="col-md-6">
+                    <center>
+                        <h1>demenagement Casablanca</h1>
+                    </center>
+                    <p class="testimonials">
+                        Selon la formule déménagement choisie, les déménageurs s'occupent simplement du transport et la
+                        livraison de
+                        vos biens, ou peuvent gérer tous les aspects de votre déménagement. Cette prestation pour les
+                        déménagements
+                        de particuliers permet beaucoup de flexibilité, quant à l'optimisation de transport par exemple
+                        (déménagement groupé ou en camion aller simple) et les options ou le niveau de service
+                        déménagement
+                        particulier que vous souhaitez, tout en garantissant une prestation et une exécution
+                        professionnelles.
+
+                        Grâce à leur expertise du déménagement, le transport et le chargement de vos biens sont pris en
+                        charge
+                        rapidement et de façon complètement sécurisée. Vous bénéficiez par ailleurs de l'assurance
+                        déménageur qui
+                        couvre vos biens personnels.
+
+                        Les professionnels du déménagement sont également en mesure de gérer votre projet de
+                        déménagement.
+                        Intervenant sur plusieurs aspects tels que des programmes d'assistance pour le transfert du
+                        personnel.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container text-center py-5">
+            <div class="row align-items-center">
+
+                <div class="col-md-4 text-center">
+                    <div class="icon-circle">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h5 class="mt-3">Demenagement Casablanca</h5>
+                    <p>Lorem ipsum dolor sit amet, adipis elit consectetur.</p>
+                </div>
+
+
+                <div class="col-md-4 text-center">
+                    <div class="icon-circle">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h5 class="mt-3">Demenagement Maison</h5>
+                    <p>Lorem ipsum dolor sit amet, adipis elit consectetur.</p>
+                </div>
+
+
+
+
+
+                <div class="col-md-4 text-center">
+                    <div class="icon-circle">
+                        <i class="fas fa-clipboard"></i>
+                    </div>
+                    <h5 class="mt-3">Gestion de projet</h5>
+                    <p>Lorem ipsum dolor sit amet, adipis elit consectetur.</p>
+                </div>
+            </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row text-center text-md-start">
+                <div class="col-12 col-md-3 mb-4">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/Moveto.png" alt="Moveto Logo" class="img-fluid">
+                    </a>
+                    <p>Hendrerit neque sem volutpat ornare bibendum class euismod. Ultricies sociosqu elit rhoncus
+                        imperdiet.
+                    </p>
+                    <div class="social-icons">
+                        <a href="#" class="me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="me-2"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 mb-4">
+                    <h5 class="fw-bold">Our Services</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-dark">International Moves</a></li>
+                        <li><a href="#" class="text-dark">Domestic Moves</a></li>
+                        <li><a href="#" class="text-dark">Office Moves</a></li>
+                        <li><a href="#" class="text-dark">Secure Storage</a></li>
+                        <li><a href="#" class="text-dark">Vehicle Transfer</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-3 mb-4">
+                    <h5 class="fw-bold">Our Network</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-dark">Asia</a></li>
+                        <li><a href="#" class="text-dark">Africa</a></li>
+                        <li><a href="#" class="text-dark">Europe</a></li>
+                        <li><a href="#" class="text-dark">France</a></li>
+                        <li><a href="#" class="text-dark">Middle East</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-md-3 mb-4">
+                    <h5 class="fw-bold">Subscribe Newsletter</h5>
+                    <p>Subscribe to our Newsletter to get important news, amazing offers & inside scoops:</p>
+                    <form>
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                            <button class="btn subscribe-btn" type="submit">SIGN UP</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-bottom">
+        <p class="mb-0">Copyright &copy; 2025 <span class="fw-bold">Moveto</span>, All Rights Reserved. Powered By <a
+                href="#">Moxcreative</a></p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </body>
 
 </html>

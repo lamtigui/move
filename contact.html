@@ -11,7 +11,7 @@
     <link rel="icon" href="images/logo.png" type="image/x-icon">
     <style>
         .propos {
-            background: url('images/moving.jpg') no-repeat center center/cover;
+            background: url('images/allo.jpg') no-repeat center center/cover;
             height: 50vh;
             display: flex;
             align-items: center;
@@ -33,6 +33,51 @@
         .propos-2 {
             z-index: 2;
             text-align: left;
+        }
+
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .contact-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            max-width: 600px;
+            margin: 40px auto;
+            border-top: 4px solid #e65100;
+        }
+
+        .contact-card h2 {
+            font-weight: bold;
+            color: #1e0b49;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            padding: 15px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .contact-item i {
+            font-size: 24px;
+            color: #1e0b49;
+            margin-right: 15px;
+        }
+
+        .contact-item:last-child {
+            border-bottom: none;
+        }
+
+        .contact-item p {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .contact-item strong {
+            color: #1e0b49;
         }
     </style>
 </head>
@@ -119,6 +164,7 @@
             </div>
             <div class="row pb-4">
                 <div class="col-lg-7 pb-5">
+
 
                     <p>
                         Nous sommes là pour vous aider à planifier votre déménagement en toute tranquillité. Pour
@@ -335,11 +381,11 @@
                             <div class="inputAndLabelCon" id="messageTxt">
                                 <label for="">Message <span class="necessary">*</span></label><br>
                                 <textarea style=" border: 1px solid rgb(10, 10, 10) !important;
-                   font-family: arial;
-                   font-Weight: bold;
-                   font-size: 18px;
-                   color: #6c757d;  width: 100%;
-                   height: 100px; " type="text" name="senderMessage" placeholder="Message"
+                                        font-family: arial;
+                                        font-Weight: bold;
+                                        font-size: 18px;
+                                        color: #6c757d;  width: 100%;
+                                        height: 100px; " type="text" name="senderMessage" placeholder="Message"
                                     required=""></textarea><br><br>
 
                             </div>
@@ -347,11 +393,11 @@
                             <div class="inputAndLabelCon">
                                 <label id="captchaQuestion">Quel est la somme de 4 + 1 ?</label><br>
                                 <input type="number" placeholder="Entrez bonne reponse " style=" border: 1px solid rgb(10, 10, 10) !important;
-font-family: arial;
-font-Weight: bold;
-font-size: 18px;
-color: #6c757d;  width: 100%;
-height: 40px; " id="captchaAnswer" required=""><br><br>
+                                    font-family: arial;
+                                    font-Weight: bold;
+                                    font-size: 18px;
+                                    color: #6c757d;  width: 100%;
+                                    height: 40px; " id="captchaAnswer" required=""><br><br>
                                 <span id="errorMessage" class="error"></span>
                             </div>
                             <button type="submit" id="sendMessageBtn"
@@ -361,13 +407,53 @@ height: 40px; " id="captchaAnswer" required=""><br><br>
 
 
                         </div>
-                    </form>
 
+                    </form>
+                    
+
+                </div>
+                <div class="contact-card col-lg-5">
+                    <h2>Contact Info</h2>
+                    <p>Contactez notre société de déménagement pour en savoir plus sur le domaine de déménagement.</p>
+
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Adress</strong>
+                            <p>Casablanca, Maroc</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-mobile-alt"></i>
+                        <div>
+                            <strong>Numero De Telephone</strong>
+                            <p>(+212) 000 000 000</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>E-Mail Address</strong>
+                            <p>ara.demenagement.maroc@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <div>
+                            <strong>Jours/Heures</strong>
+                            <p>Lun - Dim / 9h00 - 20h00</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
         </div>
+
         </section>
+
 
         <footer class="footer">
             <div class="container">
