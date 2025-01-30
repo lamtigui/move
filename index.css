@@ -279,7 +279,7 @@
 
 .network-heading {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 10px;
   color: #1a1a1a;
 }
 
@@ -399,17 +399,19 @@
 }
 
 .footer {
-  background-color: #f8f9fa;
-  padding: 40px 20px;
+  background-color: #e8eff7;
+  padding: 50px 30px;
 }
-
+.footer p{
+  text-align: justify;
+}
 .footer img {
   height: 30%;
   width: 70%;
 }
 
 .footer .social-icons a {
-  color: #495057;
+  color: #064c92;
   font-size: 20px;
   margin-right: 10px;
 }
