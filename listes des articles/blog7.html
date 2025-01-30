@@ -10,29 +10,49 @@
     <link rel="stylesheet" href="../index.css">
     <link rel="icon" href="../images/logo.png" type="image/x-icon">
     <style>
-        .propos {
-            background: url('../images/bg.png') no-repeat center center/cover;
+            .heroo {
+            background: url('/images/dipeau.jpg') center/cover no-repeat;
+            color: white;
             height: 50vh;
-            display: flex;
-            align-items: center;
             position: relative;
-            padding-left: 60px;
-            color: rgb(255, 255, 255);
+            padding: 100px 0;
         }
 
-        .propos-1 {
-            background-color: rgba(17, 83, 138, 0.644);
+        .heroo::before {
+            content: '';
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            z-index: 1;
+            background: rgba(0, 0, 0, 0.5);
         }
 
-        .propos-2 {
+        .heroo-content {
+            position: relative;
             z-index: 2;
-            text-align: left;
+        }
+
+        .breadcrumb-item+.breadcrumb-item::before {
+            content: "/";
+            color: rgb(255, 98, 7);
+        }
+
+        .breadcrumb-item a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .breadcrumb-item.active {
+            color: white;
+        }
+
+        .orange-bar {
+            width: 7px;
+            height: 100%;
+            background-color: rgb(255, 102, 0);
+            position: absolute;
+        
         }
 
         .h5 {
@@ -127,13 +147,19 @@
         </nav>
     </header>
 
-    <section>
-        <div class="propos">
-            <div class="propos-1"></div>
-            <div class="propos-2">
-                <a href="index.html">Home</a>
-                <a href="#">/ Blog</a>
-                <h1 class="display-8 fw-bold">BLOG</h1>
+    <section class="heroo d-flex align-items-center">
+        <div class="container text-white heroo-content">
+            <div class="position-relative d-inline-block">
+                <div class="orange-bar"></div>
+                <h1 class="fw-bold ms-3">BLOG</h1>
+
+                <nav  class="ms-3">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">blog 7</a></li>
+                        
+                    </ol>
+                </nav>
             </div>
         </div>
     </section>
@@ -143,7 +169,7 @@
                 <img src="../images/blog7.jpg" alt="Moving Company" style="padding: 2rem;" class="img">
             </div>
 
-            <h1 class="h1">BLOG 1</h1>
+            <h1 class="h1">BLOG 7</h1>
 
             <div class="row align-items-center">
 

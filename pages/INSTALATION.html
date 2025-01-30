@@ -10,29 +10,49 @@
     <link rel="stylesheet" href="../index.css">
     <link rel="icon" href="../images/logo.png" type="image/x-icon">
     <style>
-        .propos {
-            background: url('../images/bg.png') no-repeat center center/cover;
+              .heroo {
+            background: url('/images/warehouse2.jpg') center/cover no-repeat;
+            color: white;
             height: 50vh;
-            display: flex;
-            align-items: center;
             position: relative;
-            padding-left: 60px;
-            color: rgb(255, 255, 255);
+            padding: 100px 0;
         }
 
-        .propos-1 {
-            background-color: rgba(17, 83, 138, 0.644);
+        .heroo::before {
+            content: '';
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            z-index: 1;
+            background: rgba(0, 0, 0, 0.5);
         }
 
-        .propos-2 {
+        .heroo-content {
+            position: relative;
             z-index: 2;
-            text-align: left;
+        }
+
+        .breadcrumb-item+.breadcrumb-item::before {
+            content: "/";
+            color: rgb(255, 98, 7);
+        }
+
+        .breadcrumb-item a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .breadcrumb-item.active {
+            color: white;
+        }
+
+        .orange-bar {
+            width: 7px;
+            height: 100%;
+            background-color: rgb(255, 102, 0);
+            position: absolute;
+        
         }
 
         .container P {
@@ -89,7 +109,7 @@
                             <a class="nav-link active" href="../index.html">Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">A Propos De Nous</a>
+                            <a class="nav-link" href="propors.html">A Propos De Nous</a>
                         </li>
 
                         <li class="nav-item dropdown">
@@ -131,13 +151,20 @@
         </nav>
     </header>
 
-    <section>
-        <div class="propos">
-            <div class="propos-1"></div>
-            <div class="container propos-2">
-                <a href="../index.html">Home</a>
-                <a href="#">/ A propos de nous</a>
-                <h1 class="display-8 fw-bold">demenagement long distance</h1>
+
+
+    <section class="heroo d-flex align-items-center">
+        <div class="container text-white heroo-content">
+            <div class="position-relative d-inline-block">
+                <div class="orange-bar"></div>
+                <h1 class="fw-bold ms-3">demenagement long distance</h1>
+
+                <nav  class="ms-3">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">A propos de nous</a></li>
+                    </ol>
+                </nav>
             </div>
         </div>
     </section>
