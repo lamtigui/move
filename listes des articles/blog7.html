@@ -35,23 +35,25 @@
             text-align: left;
         }
 
-        .h5{
+        .h5 {
             color: rgb(0, 183, 255);
         }
-        .h1{
+
+        .h1 {
             color: rgb(3, 3, 83);
         }
-
-
-
-
-
-
 
         .img {
 
             height: 40rem;
             object-fit: cover;
+        }
+
+        @media (max-width: 768px) {
+            .img {
+
+                height: 20rem;
+            }
         }
     </style>
 </head>
@@ -85,16 +87,23 @@
                                 Nos Services
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
-                                <li><a class="dropdown-item" href="../pages/conception.html">PLANIFICATION ET CONCEPTION</a></li>
+                                <li><a class="dropdown-item" href="../pages/conception.html">PLANIFICATION ET
+                                        CONCEPTION</a></li>
                                 <li><a class="dropdown-item" href="../pages/MAISON.html">DEMENAGEMENT MAISON</a></li>
                                 <li><a class="dropdown-item" href="../pages/BUREAU.html">DEMENAGEMENT BUREAU</a></li>
-                                <li><a class="dropdown-item" href="../pages/CENTRE.html">DEMENAGEMENT CENTRE COMMERCIAL</a></li>
-                                <li><a class="dropdown-item" href="../pages/DISTANCE.html">DEMENAGEMENT ET INSTALATION</a></li>
-                                <li><a class="dropdown-item" href="../pages/PARTICULIER.html">DEMENAGEMENT PARTICULIER</a></li>
-                                <li><a class="dropdown-item" href="../pages/ASSISTANCE.html">CONSEIL ET ASSISTANCE</a></li>
-                                <li><a class="dropdown-item" href="../pages/PROFESSIONNELS.html">DEMENAGEMENT PROFESSIONNELS</a>
+                                <li><a class="dropdown-item" href="../pages/CENTRE.html">DEMENAGEMENT CENTRE
+                                        COMMERCIAL</a></li>
+                                <li><a class="dropdown-item" href="../pages/DISTANCE.html">DEMENAGEMENT ET
+                                        INSTALATION</a></li>
+                                <li><a class="dropdown-item" href="../pages/PARTICULIER.html">DEMENAGEMENT
+                                        PARTICULIER</a></li>
+                                <li><a class="dropdown-item" href="../pages/ASSISTANCE.html">CONSEIL ET ASSISTANCE</a>
                                 </li>
-                                <li><a class="dropdown-item" href="../pages/INSTALATION.html">DEMENAGEMENT LONGUE DISTANCE</a>
+                                <li><a class="dropdown-item" href="../pages/PROFESSIONNELS.html">DEMENAGEMENT
+                                        PROFESSIONNELS</a>
+                                </li>
+                                <li><a class="dropdown-item" href="../pages/INSTALATION.html">DEMENAGEMENT LONGUE
+                                        DISTANCE</a>
                                 </li>
                             </ul>
                         </li>
@@ -202,7 +211,7 @@
     <script>
         const topBtn = document.getElementById("topBtn");
 
-        window.onscroll = function() {
+        window.onscroll = function () {
             if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
                 topBtn.style.display = "block";
             } else {
