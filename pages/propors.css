@@ -1,0 +1,162 @@
+.heroo {
+    background: url('/images/aboutusbg.jpg') center/cover no-repeat;
+    color: white;
+    height: 50vh;
+    position: relative;
+    padding: 100px 0;
+}
+
+.heroo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.heroo-content {
+    position: relative;
+    z-index: 2;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content: "/";
+    color: rgb(255, 98, 7);
+}
+
+.breadcrumb-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.breadcrumb-item.active {
+    color: white;
+}
+
+.orange-bar {
+    width: 7px;
+    height: 100%;
+    background-color: rgb(255, 102, 0);
+    position: absolute;
+
+}
+
+.h5 {
+    color: rgb(0, 183, 255);
+}
+
+.h1 {
+    color: rgb(3, 3, 83);
+}
+
+.img {
+
+    height: 40rem;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .img {
+
+        height: 20rem;
+    }
+}
+
+.expert-card {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.expert-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+.experts-card img {
+    width: 150px;
+    height: 150px;
+    
+    margin-bottom: 15px;
+}
+
+.expert-card h4 {
+    margin: 10px 0 5px;
+}
+
+.expert-card p {
+    color: #666;
+}
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 50%;
+    padding: 50px;
+    border: gray 1px solid;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testim {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 15px;
+}
+
+.testim img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.testim-text {
+    flex: 1;
+}
+
+.quote-icon {
+    font-size: 30px;
+    color: orange;
+}
+
+.buttons {
+    margin-top: 10px;
+}
+
+.buttons button {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    background: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background: #333;
+}
+
+@media (max-width: 768px) {
+    .slide {
+        min-width: 100%;
+    }
+}
