@@ -136,59 +136,47 @@
     <hr class="my-4">
 
     <h2 class="text-center my-5" style="color: orangered;">What Our Clients Say</h2>
-    <div class="slider-container">
-        <div class="slides">
-            <div class="slide">
-                <div class="testim">
-                    <span class="quote-icon">&#8220;</span>
-                    <div class="testim-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                </div>
-                <div class="testim">
-                    <img src="../images/03.jpg" alt="Client">
-                    <div>
-                        <strong>Donald Smith</strong><br>Engineer
-                    </div>
-                </div>
+    <div class="container">
+        <div class="row align-items-center">
+          <div class="row mt-5">
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="icon-box">
+                <img class="img-fluid" src="../images/02.jpg" alt="">
+                <h4 class="h4">Rick Edward Doe</h4>
+                <p>In interdum fringilla sem primis nunc hendrerit semper sodales blandit justo letius.</p>
+                <p style="color: gold;">★★★★★</p>
+              </div>
             </div>
-            <div class="slide">
-                <div class="testim">
-                    <span class="quote-icon">&#8220;</span>
-                    <div class="testim-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                </div>
-                <div class="testim">
-                    <img src="../images/02.jpg" alt="Client">
-                    <div>
-                        <strong>Donald Smith</strong><br>Engineer
-                    </div>
-                </div>
+    
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="icon-box">
+                <img class="img-fluid" src="../images/Team-8.jpg" alt="">
+                <h4 class="h4">Jane Smith</h4>
+                <p>In interdum fringilla sem primis nunc hendrerit semper sodales blandit justo letius.</p>
+                <p style="color: gold;">★★★★★</p>
+              </div>
             </div>
-            <div class="slide">
-                <div class="testim">
-                    <span class="quote-icon">&#8220;</span>
-                    <div class="testim-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                </div>
-                <div class="testim">
-                    <img src="../images/01.jpg" alt="Client">
-                    <div>
-                        <strong>Donald Smith</strong><br>Engineer
-                    </div>
-                </div>
+    
+    
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="icon-box">
+                <img class="img-fluid" src="../images/01.jpg" alt="">
+                <h4 class="h4">Jessica Smith</h4>
+                <p>In interdum fringilla sem primis nunc hendrerit semper sodales blandit justo letius.</p>
+                <p style="color: gold;">★★★★★</p>
+              </div>
             </div>
-            <div class="slide">
-                <div class="testim">
-                    <span class="quote-icon">&#8220;</span>
-                    <div class="testim-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                </div>
-                <div class="testim">
-                    <img src="../images/Team-8.jpg" alt="Client">
-                    <div>
-                        <strong>Jane Smith</strong><br>Architect
-                    </div>
-                </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="icon-box">
+                <img class="img-fluid" src="../images/03.jpg" alt="">
+                <h4 class="h4">Donald Smith</h4>
+                <p>In interdum fringilla sem primis nunc hendrerit semper sodales blandit justo letius.</p>
+                <p style="color: gold;">★★★★★</p>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-    <div class="dots"></div>
+      </div>
 
     <hr class="my-4">
 
@@ -259,45 +247,7 @@
     </div>
     <hr class="my-4">
 </section>
-<script>
-    let index = 0;
-    const slides = document.querySelector('.slides');
-    const totalSlides = document.querySelectorAll('.slide').length;
-    const dotsContainer = document.querySelector('.dots');
 
-    function showSlide() {
-        slides.style.transform = `translateX(${-index * 50}%)`;
-        document.querySelectorAll('.dot').forEach((dot, i) => {
-            dot.classList.toggle('active', i === index);
-        });
-    }
-
-    function nextSlide() {
-        index = (index + 1) % totalSlides;
-        showSlide();
-    }
-
-    function prevSlide() {
-        index = (index - 1 + totalSlides) % totalSlides;
-        showSlide();
-    }
-
-    function createDots() {
-        for (let i = 0; i < totalSlides; i++) {
-            const dot = document.createElement('div');
-            dot.classList.add('dot');
-            dot.addEventListener('click', () => {
-                index = i;
-                showSlide();
-            });
-            dotsContainer.appendChild(dot);
-        }
-        showSlide();
-    }
-
-    createDots();
-    setInterval(nextSlide, 4000); // Auto-slide every 4 seconds
-</script>
     <button id="topBtn" onclick="scrollToTop()"><i class="fas fa-arrow-up"></i></button>
 
     <script>

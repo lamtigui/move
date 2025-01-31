@@ -89,20 +89,6 @@
 .expert-card p {
     color: #666;
 }
-.slides {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.slide {
-    min-width: 50%;
-    padding: 50px;
-    border: gray 1px solid;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 .testim {
     display: flex;
@@ -111,11 +97,17 @@
     gap: 15px;
 }
 
+
 .testim img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
 }
+   .img-fluid {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
 
 .testim-text {
     flex: 1;
@@ -136,27 +128,3 @@
     cursor: pointer;
 }
 
-.dots {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-.dot {
-    width: 10px;
-    height: 10px;
-    margin: 5px;
-    background: #ccc;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.dot.active {
-    background: #333;
-}
-
-@media (max-width: 768px) {
-    .slide {
-        min-width: 100%;
-    }
-}
