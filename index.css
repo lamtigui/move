@@ -640,7 +640,7 @@
 #topBtn {
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  left: 20px;
   display: none;
   background-color: #e44405;
   color: white;
@@ -676,14 +676,14 @@
 
 .fixed-btn {
     bottom: 160px;
-    background: #7e0ce9;
+    background: #fc7100;
     padding-right: .5px;
     padding-top: 9px
 }
 
 .fixed-btn1 {
     bottom: 100px;
-    background: #0facf3;
+    background: #00097c;
     line-height: 45px;
     padding-right: .5px;
     padding-top: 2px;
