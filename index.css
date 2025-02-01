@@ -281,48 +281,19 @@
   color: #f48225;
 }
 
-.world-map {
-  text-align: center;
-  margin: 50px ;
-  
-}
 
-.world-map img {
-  max-width: 5%;
-  height: 2%;
-}
 
-.location {
-  position: absolute;
-  font-size: 0.9rem;
-  font-weight: bold;
-  color: #ff6600;
-}
 
-.location-us {
-  top: 20%;
-  left: 10%;
-}
 
-.location-france {
-  top: 23%;
-  left: 45%;
-}
 
-.location-africa {
-  top: 45%;
-  left: 45%;
-}
 
-.location-malaysia {
-  top: 55%;
-  left:70%
-}
 
-.location-indonesia {
-  top: 65%;
-  left: 75%
-}
+
+
+
+
+
+
 
 .info-box {
   text-align: center;
@@ -507,7 +478,7 @@
   justify-content: space-around;
   background-color: var(--accent-orange);
   color: white;
-  padding: 0rem 0;
+  
   text-align: center;
 }
 
@@ -542,9 +513,6 @@
   align-items: center;
   justify-content: center;
 }
-
-
-
 
 .testimonials {
   padding: 2rem;
