@@ -673,7 +673,6 @@
 }
 
 .list-unstyled a{
-  
     display: inline-block;
     color: rgb(65, 65, 85);
     text-decoration: none;
@@ -682,6 +681,4 @@
   }
   .list-unstyled a:hover {
     color: orangered;
-    background-color: #032b57;
   }
-  
