@@ -671,3 +671,17 @@
     color: #000 !important;
     transition: .7s
 }
+
+.list-unstyled a{
+  
+    display: inline-block;
+    color: rgb(65, 65, 85);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  .list-unstyled a:hover {
+    color: orangered;
+    background-color: #032b57;
+  }
+  
