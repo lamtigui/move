@@ -1,12 +1,12 @@
-.hero-blog {
-    background: url('/images/warehouse2.jpg') center/cover no-repeat;
+.heroo {
+    background: url('/images/dipeau.jpg') center/cover no-repeat;
     color: white;
     height: 50vh;
     position: relative;
     padding: 100px 0;
 }
 
-.hero-blog::before {
+.heroo::before {
     content: '';
     position: absolute;
     top: 0;
@@ -16,7 +16,7 @@
     background: rgba(0, 0, 0, 0.5);
 }
 
-.hero-blog-content {
+.heroo-content {
     position: relative;
     z-index: 2;
 }
@@ -45,4 +45,24 @@
     text-decoration: none;
     color: #002244;
     font-weight: bold;
+}
+.h5 {
+    color: rgb(0, 183, 255);
+}
+
+.h1 {
+    color: rgb(3, 3, 83);
+}
+
+.img {
+
+    height: 40rem;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .img {
+
+        height: 20rem;
+    }
 }
