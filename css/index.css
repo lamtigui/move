@@ -813,3 +813,51 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
 }
+.heroo::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.container2 img {
+  width: auto;
+  height: 45rem;
+}
+.container P {
+  text-align: justify;
+}
+
+.container3 img {
+  width: 50rem;
+  height: 40rem;
+}
+
+@media (max-width: 768px) {
+  .container1 img {
+      width: 45rem;
+      height: 20rem;
+  }
+}
+
+.test {
+
+  text-align: justify;
+  margin: 0;
+
+}
+
+@media (max-width: 768px) {
+  .test {
+      text-align: justify;
+      margin: 0;
+      padding-left: 2.5rem;
+      padding-right: 3rem;
+  }
+}
+.container1 img {
+  width: 60rem;
+  height: 27rem;
+}
