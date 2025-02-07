@@ -41,7 +41,7 @@
 }
 
 .hero {
-  background: url('images/demenageur.png') no-repeat center center/cover;
+  background: url('/images/demenageur.png') no-repeat center center/cover;
   height: 75vh;
   display: flex;
   align-items: center;
@@ -228,7 +228,7 @@
 
 
 .hero2 {
-  background: url('images/Log.png') fixed center center/cover;
+  background: url('/images/Log.png') fixed center center/cover;
   height: 45vh;
   display: flex;
   align-items: center;
@@ -239,7 +239,7 @@
 }
 @media (max-width: 768px) {
   .hero2 {
-    background: url('images/Log.png') fixed center center/cover;
+    background: url('/images/Log.png') fixed center center/cover;
     height: 80vh;
     display: flex;
     align-items: center;
@@ -284,6 +284,27 @@
 
 
 
+.breadcrumb-item+.breadcrumb-item::before {
+  content: "/";
+  color: rgb(255, 98, 7);
+}
+
+.breadcrumb-item a {
+  color: white;
+  text-decoration: none;
+}
+
+.breadcrumb-item.active {
+  color: white;
+}
+
+.orange-bar {
+  width: 7px;
+  height: 100%;
+  background-color: rgb(255, 102, 0);
+  position: absolute;
+
+}
 
 
 
@@ -405,7 +426,7 @@
 
 .photo-section {
   position: relative;
-  background-image: url('images/cartoon.jpg');
+  background-image: url('/images/cartoon.jpg');
   background-size: cover;
   background-position: center;
   color: white;
