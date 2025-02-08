@@ -46,6 +46,7 @@
     color: #002244;
     font-weight: bold;
 }
+
 .h5 {
     color: rgb(0, 183, 255);
 }
@@ -54,15 +55,14 @@
     color: rgb(3, 3, 83);
 }
 
-.img {
+.containerr IMG {
+    width: 60rem;
+    height: 27rem;
+  }
 
-    height: 40rem;
-    object-fit: cover;
-}
-
-@media (max-width: 768px) {
-    .img {
-
+  @media (max-width: 768px) {
+    .containerr IMG {
+        width: 23rem;
         height: 20rem;
     }
-}
+  }

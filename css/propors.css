@@ -43,27 +43,6 @@
 
 }
 
-.h5 {
-    color: rgb(0, 183, 255);
-}
-
-.h1 {
-    color: rgb(3, 3, 83);
-}
-
-.img {
-
-    height: 40rem;
-    object-fit: cover;
-}
-
-@media (max-width: 768px) {
-    .img {
-
-        height: 20rem;
-    }
-}
-
 .expert-card {
     text-align: center;
     margin-bottom: 20px;
@@ -75,56 +54,20 @@
     border-radius: 50%;
     margin-bottom: 15px;
 }
+
 .experts-card img {
     width: 150px;
     height: 150px;
-    
     margin-bottom: 15px;
 }
 
 .expert-card h4 {
     margin: 10px 0 5px;
+    color: rgb(2, 2, 68);
 }
 
-.expert-card p {
-    color: #666;
-}
-
-.testim {
-    display: flex;
-    align-items: center;
-    text-align: left;
-    gap: 15px;
-}
-
-
-.testim img {
+.img-fluid {
     width: 50px;
     height: 50px;
     border-radius: 50%;
 }
-   .img-fluid {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-    }
-
-.testim-text {
-    flex: 1;
-}
-
-.quote-icon {
-    font-size: 30px;
-    color: orange;
-}
-
-.buttons {
-    margin-top: 10px;
-}
-
-.buttons button {
-    padding: 10px;
-    margin: 5px;
-    cursor: pointer;
-}
-
