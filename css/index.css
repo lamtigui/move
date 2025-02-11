@@ -47,7 +47,7 @@
   align-items: center;
   justify-content: flex-start;
   position: relative;
-  padding-left: 70px;
+  padding-left: 40px;
   color: white;
 }
 
@@ -63,7 +63,9 @@
 
 .hero-content {
   z-index: 2;
-  text-align: left;
+}
+@media (max-width: 768px) {
+
 }
 
 .cta-btn {
@@ -75,6 +77,32 @@
   border-radius: 30px;
   text-decoration: none;
   margin-top: 20px;
+}
+.cta-btn-u{
+  background-color: #f47c22;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+.cta-btn-u:hover {
+  background-color: #080599;
+  color: #ff7300;
+}
+@media (max-width: 768px) {
+  .cta-btn-u {
+    background-color: #f47c22;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    text-decoration: none;
+    margin-top: 10px;
+  }
 }
 
 .cta-btn:hover {
@@ -90,6 +118,17 @@
   border-radius: 30px;
   text-decoration: white;
   margin-top: 20px;
+}
+@media (max-width: 768px) {
+  .cta-btn-us {
+    color: white;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 5px;
+    font-size: 1rem;
+    border-radius: 30px;
+    text-decoration: white;
+    margin-top: 10px;
+  }
 }
 
 .cta-btn-us:hover {
@@ -234,7 +273,7 @@
   align-items: center;
   justify-content: flex-start;
   position: relative;
-  padding-left: 80px;
+  padding-left: 40px;
   color: rgb(255, 255, 255);
 }
 @media (max-width: 768px) {
@@ -245,7 +284,7 @@
     align-items: center;
     justify-content: flex-start;
     position: relative;
-    padding-left: 80px;
+    padding-left: 40px;
     color: rgb(255, 255, 255);
   }
 }
@@ -375,7 +414,7 @@
 
 .footer {
   background-color: #e8eff7;
-  padding: 30px;
+  padding: 20px;
 }
 .footer p{
   text-align: justify;
@@ -393,6 +432,13 @@
 
 .footer .social-icons a:hover {
   color: #007bff;
+}
+@media (max-width: 768px) {
+  .footer ul{
+    
+    font-size: 12px;
+    text-align: left;
+  }
 }
 
 .footer-bottom {
@@ -430,7 +476,7 @@
   background-size: cover;
   background-position: center;
   color: white;
-  padding: 100px 0;
+  padding: 50px;
 }
 
 
@@ -466,14 +512,6 @@
   padding: 10px 20px;
 }
 
-
-.person-image {
-  position: absolute;
-  right: 0;
-  bottom: 0px;
-  width: 500px;
-  z-index: 3;
-}
 @media (max-width: 768px) {
   iframe {
     width: 100%;
@@ -500,8 +538,6 @@
   margin: 0;
 
 }
-
-
 
 .stats {
   display: flex;
@@ -533,7 +569,6 @@
   background-color: #f15423;
   padding: 10px 0;
 }
-
 .stat {
   flex: 1;
   padding: 10px;
