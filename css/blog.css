@@ -49,11 +49,14 @@
 
 .h5 {
     color: rgb(0, 183, 255);
+
 }
 
 .h1 {
     color: rgb(3, 3, 83);
+    font-family: fantasy;
 }
+
 
 .containerr IMG {
     width: 60rem;
@@ -66,3 +69,11 @@
         height: 20rem;
     }
   }
+
+  .grid-list {
+    display: flex;
+    flex-wrap: wrap;  
+    gap: 17px;         
+  }
+
+ 
