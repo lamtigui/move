@@ -11,6 +11,22 @@
   font-family: Arial, sans-serif;
   font-size: 20px;
 }
+@media (max-width: 768px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    z-index: 1000;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+  }
+}
+
 
 .nav-link {
   color: #002856;
@@ -20,8 +36,14 @@
 }
 
 .logo {
-  width: 200px;  /* Adjust width */
-  height: auto;  /* Keep aspect ratio */
+  width: 200px; 
+  height: auto; 
+}
+@media (max-width: 768px) { 
+  .logo {
+    width: 100px;
+    height: auto;
+  }
 }
 
 
