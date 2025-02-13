@@ -97,7 +97,9 @@
   z-index: 2;
 }
 @media (max-width: 768px) {
-
+.hero-content h1{
+  font-size: 33px; 
+}
 }
 
 .cta-btn {
@@ -130,7 +132,7 @@
     color: white;
     border: none;
     padding: 10px 20px;
-    font-size: 1rem;
+    font-size: 0.9rem;
     border-radius: 30px;
     text-decoration: none;
     margin-top: 10px;
