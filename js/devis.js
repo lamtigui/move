@@ -1,44 +1,22 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("#Demandez\\ un\\ DevisForm");
+    
+    if (form) {
+        form.addEventListener("submit", function (event) {
+            event.preventDefault();
+            alert("Votre demande de devis a été soumise avec succès!");
+            form.reset();
+        });
+    }
 
-$(document).ready(function () { $("#Part").hide(); $("#Prof").hide(); $("#atre").hide(); });
-
-let sltplc = document.querySelector('#TypeLocal');
-sltplc.addEventListener('change', function () {
-
-    if (this.value == '2') {
-        $("#Prof").show();
-        $("#atre").hide();
-        $('#atr').val('');
-        $("#Part").hide();
-        $("#pr")[0].selectedIndex = 0;
-
-        let slpf = document.querySelector("#pf");
-        slpf.addEventListener('change', function () {
-            if (this.value == 10) {
-                $("#atre").show();
-            }
-            else {
-                $("#atre").hide();
-                $('#atr').val('');
+    const phoneInput = document.querySelector("input[name='senderTel']");
+    if (phoneInput) {
+        phoneInput.addEventListener("keypress", function (event) {
+            const charCode = event.which ? event.which : event.keyCode;
+            if (charCode < 48 || charCode > 57) {
+                event.preventDefault();
             }
         });
     }
-    else
-        if (this.value == '1') {
-            $("#Part").show();
-            $("#atre").hide();
-            $('#atr').val('');
-            $("#Prof").hide();
-            $("#pf")[0].selectedIndex = 0;
-
-            let slpr = document.querySelector("#pr");
-            slpr.addEventListener('change', function () {
-                if (this.value == 5) {
-                    $("#atre").show();
-                }
-                else {
-                    $("#atre").hide();
-                    $('#atr').val('');
-                }
-            });
-        }
+    
 });
