@@ -1,5 +1,5 @@
 .heroo {
-    background: url('/images/dipeau.webp') center/cover no-repeat;
+    background: url('../images/dipeau.webp') center/cover no-repeat;
     color: white;
     height: 50vh;
     position: relative;
