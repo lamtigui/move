@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/devis.css">
     <link rel="icon" href="images/demenagment-logo.png" type="image/x-icon">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     
 
 </head>
@@ -126,7 +127,7 @@
             </div>
             <div class="row pb-4">
                 <div class="col-lg-7 pb-5">
-                    <form id="Demandez un DevisForm" method="POST">
+                    <form id="Demandez un DevisForm" action="verify.php" method="POST">
                         <div id="contactFormHolder">
                             <div class="inputAndLabelCon">
                                 <label for="">Nom/Prenom <span class="necessary">*</span></label><br>
@@ -206,7 +207,9 @@
                             <div class="inputAndLabelCon" id="messageTxt">
                                 <label for="">Message <span class="necessary">*</span></label><br>
                                 <textarea class="area" type="text" name="senderMessage" placeholder="Message"required=""></textarea><br><br>
+                                <div class="g-recaptcha" data-sitekey="6Lels9kqAAAAAJjYnqNREFHbj4W9MmyRrEDok4l4"></div>
                             </div>
+                            
                             <button type="submit" id="sendMessageBtn" class="submit" name="sendEmailSubBtn">ENVOYER</button>
                         </div>
 
