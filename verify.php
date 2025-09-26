@@ -1,7 +1,7 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   
-    $secretKey = "6Lels9kqAAAAABNjURWWtVsfNSzTiegSqsAC1hsm"; 
+    $secretKey = "6LeMitIrAAAAAEKAuAn2SCiqOrmuVQFMH2C8LG1u"; 
 
     
     $recaptchaResponse = $_POST["g-recaptcha-response"];
